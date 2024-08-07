@@ -2,6 +2,7 @@ import 'package:clean_architecture/presentation/forgot_password/forgot_password.
 import 'package:clean_architecture/presentation/login/login.dart';
 import 'package:clean_architecture/presentation/main/mainview.dart';
 import 'package:clean_architecture/presentation/register/register.dart';
+import 'package:clean_architecture/presentation/resources/string_manager.dart';
 import 'package:clean_architecture/presentation/splash/splash.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -49,10 +50,10 @@ Route<dynamic> unDefinedRoute() {
   return MaterialPageRoute(
       builder: (_) => Scaffold(
             appBar: AppBar(
-              title: Text("No Route Found"),
+              title: Text(AppString.noRoutesFound),
             ),
             body: Center(
-              child: Text("No Route Found"),
+              child: Text(AppString.noRoutesFound),
             ),
           ));
 }
