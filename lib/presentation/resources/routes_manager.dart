@@ -11,7 +11,7 @@ import '../onboarding/onboarding.dart';
 import '../store_details/store_details.dart';
 
 class RoutesManager {
-  static const String splashRoutes = "/";
+  static const String splashRoute = "/";
   static const String onBoardingRoute = "/onBoarding";
   static const String loginRoute = "/login";
   static const String registerRoute = "/register";
@@ -25,7 +25,7 @@ class RoutesManager {
 class RoutesGenerator {
   static Route<dynamic> getRoute(RouteSettings routeSetting) {
     switch (routeSetting.name) {
-      case RoutesManager.splashRoutes:
+      case RoutesManager.splashRoute:
         return MaterialPageRoute(builder: (_) => SplashView());
       case RoutesManager.onBoardingRoute:
         return MaterialPageRoute(builder: (_) => OnBoardingView());

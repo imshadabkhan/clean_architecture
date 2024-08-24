@@ -26,8 +26,8 @@ ThemeData applicationThemeData() {
       color: ColorManager.primaryColor,
       elevation: AppSize.s4,
       shadowColor: ColorManager.primaryColor,
-      titleTextStyle:
-          regularFontStyle(color: ColorManager.white, fontSize: FontSize.s16),
+      // titleTextStyle:
+      //     regularFontStyle(color: ColorManager.white, fontSize: FontSize.s16),
     ),
 
     //button theme
@@ -39,21 +39,22 @@ ThemeData applicationThemeData() {
 //elevated button
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        textStyle: regularFontStyle(color: Colors.white),
+
+        // textStyle: regularFontStyle(color: Colors.white),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppSize.s4)),
-        primary: ColorManager.primaryColor,
+     backgroundColor: ColorManager.primaryColor,
       ),
     ),
 
     //text theme
     textTheme: TextTheme(
-      displayLarge:
-          BoldFontStyle(color: ColorManager.darkGrey, fontSize: FontSize.s16),
-      titleMedium:
-          SemiBoldFont(color: ColorManager.lightGrey, fontSize: FontSize.s14),
-      bodySmall: regularFontStyle(color: ColorManager.grey1),
-      bodyLarge: regularFontStyle(color: ColorManager.grey),
+      // displayLarge:
+      //     BoldFontStyle(color: ColorManager.darkGrey, fontSize: FontSize.s16),
+      // titleMedium:
+      //     // SemiBoldFont(color: ColorManager.lightGrey, fontSize: FontSize.s14),
+      // bodySmall: regularFontStyle(color: ColorManager.grey1),
+      // bodyLarge: regularFontStyle(color: ColorManager.grey),
     ),
 
     //input decoration theme(text form theme)
@@ -82,11 +83,13 @@ ThemeData applicationThemeData() {
               BorderSide(color: ColorManager.primaryColor, width: AppSize.s1_5),
           borderRadius: BorderRadius.all(Radius.circular(AppSize.s1_5)),
         ),
-        labelStyle:
-            SemiBoldFont(color: ColorManager.darkGrey, fontSize: FontSize.s14),
-        errorStyle: regularFontStyle(color: ColorManager.error),
-        hintStyle: regularFontStyle(
-          color: ColorManager.grey,
-        )),
+        // labelStyle:
+        // //     SemiBoldFont(color: ColorManager.darkGrey, fontSize: FontSize.s14),
+        // errorStyle: regularFontStyle(color: ColorManager.error),
+        // hintStyle: regularFontStyle(
+        //   color: ColorManager.grey,
+        // )
+
+    ),
   );
 }
